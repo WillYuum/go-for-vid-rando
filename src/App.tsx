@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
+import CustomButton from "./components/CusomButton";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -43,6 +44,8 @@ function App() {
             placeholder="Enter a name..."
           />
           <button type="submit">Greet</button>
+
+          <CustomButton text="Click me!" onClick={() => console.log("Hello!")} />
         </form>
       </div>
       <p>{greetMsg}</p>

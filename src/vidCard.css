@@ -1,0 +1,16 @@
+.vidCard-container{
+    background-color: rgb(89, 144, 110);
+    width: 200px;
+    height: 345px;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin:auto;
+    background-color: azure;
+    width: 95vw;
+    height: 500px;
+}

@@ -17,14 +17,12 @@ class MainVideoComponent extends React.Component<
 
   render() {
     const { selectedVideo } = this.props;
+    const videoSrc =
+      selectedVideo != null ? URL.createObjectURL(selectedVideo) : "";
+
     return (
       <div className="container">
-        <video
-          width="320"
-          height="240"
-          controls={true}
-          src={selectedVideo != null ? URL.createObjectURL(selectedVideo) : ""}
-        />
+        <video width="320" height="240" controls={true} src={videoSrc} />
       </div>
     );
   }
